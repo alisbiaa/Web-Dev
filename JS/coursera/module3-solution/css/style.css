@@ -1,0 +1,72 @@
+body {
+    background-color: #D0B0F4;
+}
+
+
+.test{
+    border : 1px solid black;
+}
+
+.navbar-brand h1{
+    padding-top: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    line-height: 0.75;
+}
+
+
+.navbar-brand a:hover , .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+ul li{
+    text-align: center;
+}
+
+.menu {
+
+    text-align: center;
+    margin-top: 30px;
+    font-size: 175%;
+    width: 100%;
+    clear: both;
+    padding-bottom: 15px;
+}
+
+
+section h3 {
+    text-align: center;
+}
+
+div section {
+    background-color: #494D5F;
+    color: antiquewhite;
+    border: 1px solid black ;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header {
+    height: 90px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+.back-top{
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+.back-top a:hover {
+   color:  #000;
+    text-decoration: none
+}
+

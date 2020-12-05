@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=width-device, initial-scale=1">
+
+    <title>Sign-in</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="jStyle.css">
+</head>
+<body onload="checkPassword();">
+    <header>
+        <nav>
+            <div class="float-left"> <img  id="logo" src="logo.png" alt="logoImg"> </div>
+            <div id="org-name" class="float-left"> motherfuckers duty</div>
+            <div class="float-right sign"><a href="#" > Sign-in </a> </div>
+            <div class="float-right sign"><a href="#" > Sign-up</a> </div>
+        </nav>
+    </header>
+
+    <div class="form">
+
+
+        <form action="#" method="get" class="col-lg-4 col-md-7 col-sm-11">
+
+            <div>
+                <div> <h3>Create New Account </h3> </div>
+            </div>
+
+            <hr>
+
+            <div class="input-data">
+                <div><input type="text"     name="name"             id="name"           placeholder="Name" maxlength="15" onkeyup="checkName();"></div>
+
+                <div><input type="text"     name="lastName"         id="lastName"       placeholder="Last name" maxlength="30"></div>
+
+                <div><input type="email"    name="name"             id="email"          placeholder="Enter email" onkeyup="checkEmail()"></div>
+
+                <div><input type="password" name="password"         id="password"       placeholder="password" onfocus="checkPassword();" ></div>
+
+
+                    <div id="message">
+                        <!-- between 6 to 20 characters which contain at least one numeric
+                        digit, one uppercase and one lowercase letter -->
+                        <span> Password must contain the following: </span>
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>6 characters</b></p>
+                    </div>
+
+
+                <div><input type="password" name="passwordverif"    id="passwordVerif"  placeholder="Repeat password"></div>
+
+                <div><input type="text"     name="a-line1"          id="address1"       placeholder="Address line 1"></div>
+
+                <div><input type="text"     name="a-line2"          id="address2"       placeholder="Address line 2 (optional)"></div>
+
+                <div><input type="text"     name="phoneNum"         id="phoneNum"       placeholder="Enter your ph.number"></div>
+
+            </div>
+
+            <hr>
+
+            <div  class="term-cond">
+                    <div>
+                        <p>
+                        We will use information you provided for management and administration purposes,
+                        and for keeping you informed by mail, telephone, email and SMS of other products
+                        and services from us and our partners. You can proactively manage your preferences
+                        or opt-out of communications with us at any time using Privacy Centre. You have the
+                        right to access your data held by us or to request your data to be deleted. For full
+                        details please see the bmla blblal <a href="#"> Privacy Policy. </a>
+                    </p>
+                    </div>
+                <hr>
+                    <div>
+                        <p>
+                        <input type="checkbox" name="ageLimit" id="ageLimit"/>
+                        <span>I am 18 years old and over.</span>
+                    </p>
+                    </div>
+                <hr>
+                    <div>
+                        <p>
+                        <input type="checkbox" name="terms-policy"/>
+                        <span>I agree with <a href="#">Privacy Policy</a> and <a href="#"> Websites terms and conditions of use</a>. </span>
+                    </p>
+                    </div>
+            </div>
+
+            <hr>
+
+            <div class="submit">
+                 <input type="submit" value="Create Account">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 float-left">
+            <span> Terms & Conditions</span>
+            <ul>
+                <li> <a href="#"> Privacy Policy </a></li>
+                <li> <a href="#"> Websites terms and conditions</a></li>
+            </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 float-left">
+            <span>Contact us </span>
+            <a href="mailto:dutyduty@blalabla.com">dutyduty@blalabla.com </a>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12 float-left">
+            <span> About us </span>
+            <p> Motherfuckers Duty is a team of IT experts and data scientists that has been practising blala lbla science since 2014. For each point on the globe, we provides historical, current and blablalbl al  via light-speed APIs. Headquarters in Budapest, HU.</p>
+        </div>
+
+        <div style="clear: both">
+            Company name &reg; All rights reserved.
+        </div>
+
+    </footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

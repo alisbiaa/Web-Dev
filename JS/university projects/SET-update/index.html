@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=width-device, initial-scale=1">
+    <title> SET </title>
+    <link rel="stylesheet" href="css/boardDesign.css">
+    <link rel="stylesheet" href="css/coreDesign.css">
+    <link rel="stylesheet" href="css/forumDesign.css">
+    <link rel="stylesheet" href="css/playersDesign.css">
+</head>
+<body>
+    <header> SET </header>
+    <div class="row">
+        <div class="col-3">
+            <form action="" >
+                <a href="SET%20INSTRUCTIONS%20-%20ENGLISH.pdf" id="rules" target="_blank"> <span>Game Description</span> </a>
+            <fieldset id="difficulty">
+                <legend>Difficulty : </legend>
+
+                <input type="radio" id="starter" name="difficulty" value="starter" checked>
+                <label for="starter">Starter</label>
+                <input type="radio" id="advanced" name="difficulty" value="advanced">
+                <label for="advanced">Advanced</label>
+            </fieldset>
+            <hr>
+            <fieldset id="gameMode">
+                <legend> Game mode : </legend>
+
+                <input type="radio" id="practice" name="gameMode" value="practice" >
+                <label for="starter">Practice</label>
+                <input type="radio" id="competitive" name="gameMode" value="competitive" checked>
+                <label for="advanced">Competitive</label>
+            </fieldset>
+            <hr>
+            <fieldset >
+                <legend> How many player : </legend>
+                <input id="playerNum" type="number" value="0" data-recent="0">
+                <button class="collapsible"> Player's names : </button>
+                <div id="playersNames" class="content">
+                    <ul>
+<!--                        <li> <input type="text" value="player ${i+1}" class="p"> </li>-->
+                    </ul>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset id="miscellaneousOptions">
+                <legend> Miscellaneous options : </legend>
+                <div> <input type="checkbox" id="setChecker" checked> <label for="setChecker">SET checker</label> <br> </div>
+                <div><input type="checkbox" id="setShower"> <label for="setShower">SET shower</label> </div>
+                <input type="checkbox" id="cardDistr"> <label for="cardDistr">Add 3 cards</label>
+            </fieldset>
+
+            <div id="records"></div>
+
+            <div class="startDiv">
+                <input type="button"  id="start" value="start">
+            </div>
+        </form>
+        </div>
+
+        <div class="col-7">
+            <div id="board" data-nsel="0">
+
+            </div>
+            <div id="scores" style="display: none"> </div>
+        </div>
+
+        <div class="col-2">
+            <div id="controllers" class="col-12">
+                <input type="button" id="checkButton" value="Check set" style="display: none">
+                <input type="button" id="showButton" value="Show set" style="display: none">
+                <input type="button" id="addButton" value="Add 3 cards" style="display: none">
+            </div>
+            <div id="deckStatus"> </div>
+            <div id="pStatus" data-pSel="0"> </div>
+            <div id="players" class="col-12">
+<!--                <div class="rp" data-name="boo" data-selected="0"> <span> Ahmed</span></div>-->
+<!--                <div class="rp" data-name="player 1" data-score="0" data-selected="0" data-canplay="1"> <span> player 1 | score </span></div>-->
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="js-better/SET.js"></script>
+</body>
+</html>

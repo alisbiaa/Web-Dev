@@ -1,0 +1,102 @@
+form {
+    font-family: "Space Grotesk", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+}
+fieldset {
+    margin: 10px;
+    padding: 5px;
+    border : none ;
+}
+
+fieldset legend {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    font-weight: normal;
+    font-family: Courier, monospace;
+}
+
+form #start {
+    background-color: #E35E54;
+    border-radius: 3px;
+    outline: none;
+    height: 30px;
+    padding: 5px;
+    border: #E35E54;
+    width: 8vw;
+}
+
+#playerNum {
+    width: 20%;
+}
+
+form #start:hover{
+    color: #2A363B;
+    cursor: pointer;
+}
+
+.startDiv {
+    text-align: center;
+    margin: 10px;
+}
+
+hr{
+    width: 40% ;
+}
+
+input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #FE676E;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox']:after {
+    width: 12px;
+    height: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='checkbox']:checked:after {
+    width: 12px;
+    height: 12px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #FE676E;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}

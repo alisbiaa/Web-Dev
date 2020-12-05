@@ -1,0 +1,25 @@
+#message{
+    padding-left: 10px;
+    font-size: 16px;
+    display: none;
+}
+
+.invalid{
+    color: #E35E54;
+}
+
+.invalid:before {
+    position: relative;
+    left: -10px;
+    content: "✖";
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -10px;
+    content: "✔";
+}
