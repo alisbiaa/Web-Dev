@@ -1,0 +1,23 @@
+{
+    "5fd389456888b": {
+        "fullname": "admin",
+        "email": "admin@nemkovid.hu",
+        "password": "$2y$10$iKWwVc40FoIVVL\/VTpkAM.w0LZUjp.VdQxva1cMX7Fr0mDhAmPP5a",
+        "roles": [
+            "user",
+            "admin"
+        ],
+        "id": ""
+    },
+    "5fe220fcad1d3": {
+        "fullname": "Ali Sbiaa",
+        "SSN": "123456789",
+        "address": "Tunisia",
+        "email": "alisbiaazayen@gmail.com",
+        "password": "$2y$10$L.Qnr0yW0RrbdNGKhnt.KuO6XKmwJYvwvT9WctJlLnbVhhKGj.hZK",
+        "roles": [
+            "user"
+        ],
+        "id": "5fe220fcad1d3"
+    }
+}
